@@ -15,7 +15,7 @@ Here I made a sample study on how to create a message queue system with "RabbitM
  
  ## How to Use RabbitMQ?
  
- - First we need to install rabbitmq to access its system. I used docker for this. I created a container in Docker and ran my rabbitmq. Rabbitmq is up and running on port "localhost:5672". Username and password are "guest"
+<img src="https://user-images.githubusercontent.com/96787308/196005440-007160b1-8404-4336-9d2d-575a1deff41f.PNG" width="800" height="500">
  
  
  
