@@ -26,10 +26,10 @@ Here I made a sample study on how to create a message queue system with "RabbitM
 <img src="https://user-images.githubusercontent.com/96787308/196005440-007160b1-8404-4336-9d2d-575a1deff41f.PNG" width="800" height="500">
  
  - I am doing my operations using the swagger interface in a web api project.
- - First, while rabbitmq is running, we make the connection process so that our manufacturer application can connect.
+ - First, while rabbitmq is running, we make the connection process so that our manufacturer application can connect. You can check this page [GitHub Pages](https://github.com/oguzhanKomcu/RabbitMQ_Sample/blob/master/RabbitMQ_Sample/Service/RabbitMqService.cs).
  - After connecting, I create an exchange called test1 of direct type.
  - Then I create a queu named "testqueu".
  - Then we do the bind operation to specify which queu the exchange incoming message will go to. Here we give the names of exchange , queu correctly and because we use direct, we give the name of the queu in the name of the routingkey.
  - To send a message to the consumer, we send the exchange name, routing key and our message. We don't have a service listening to these yet, but these messages will already be queued and waiting in our que. This is actually one of its best advantages. When the consumer service is disabled due to an error, the messages we send will not be left unanswered and will start processing when the consumer service starts working again.
 - Now I'm creating a console application to create a simple consumer service. In this application, I give the name of the queue that should connect to the rabbitmq system and listen.
-- I can't run my console application and incoming messages are written in a queue in the console application.
+- I can't run my console application and incoming messages are written in a queue in the console application.You can check this page [GitHub Pages](https://github.com/oguzhanKomcu/RabbitMQ_Sample/blob/master/Consumer.Console/Program.cs).
